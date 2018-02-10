@@ -5,6 +5,5 @@ eclipse-mosquitto:
   ports:
     - 1883:1883
     - 1884:1884
-    # - 9001:9001
   volumes:
     - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
