@@ -3,7 +3,7 @@ mongo:
   restart: always
   container_name: mongo
   volumes:
-    - ./data:/data/db
+    - ./mongo_data:/data/db
   ports:
     - 27017:27017
 mongo-express:

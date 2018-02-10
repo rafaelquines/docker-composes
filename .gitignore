@@ -12,3 +12,6 @@
 
 # End of https://www.gitignore.io/api/visualstudiocode
 
+node_modules
+sqlite_data
+mongo_data
