@@ -1,0 +1,49 @@
+schtml:
+  image: fwdocker.totvs.com.br/schtml32
+  links:
+    - appserver:appserver
+  ports:
+    - 8085:80
+  restart: always
+rpo:
+  image: fwdocker.totvs.com.br/rpo32_lib:arduino
+#  volumes:
+#    - /mnt/protheus/apo64:/apo
+appserver:
+  image: fwdocker.totvs.com.br/appserver32
+  links:
+    - dbaccess:dbaccess
+  ports:
+#    - 9090:80
+    - 8081:8081 # Porta para acesso TCP
+    - 8084:8084 # Porta para o REST
+  environment:
+    - SPECIALKEY=quines.fwdocker.totvs.com.br
+    - DB=MSSQL
+    - LICENSE_SERVER=10.171.65.22
+    - LICENSE_PORT=5789
+    - REST=true
+    - BUILDKILLUSERS=true
+    - FWTRACELOG=1
+    - CORSENABLE=1
+    - ALLOWORIGIN=*
+#  volumes:
+#    - /mnt/protheus/protheus_data/system:/system
+#    - /mnt/protheus/protheus_data/systemload:/systemload
+  volumes_from:
+    - rpo
+  restart: always
+dbaccess:
+  image: fwdocker.totvs.com.br/dbaccess64
+  links:
+    - database:database
+#  ports:
+#    - 7890:7890
+  environment:
+    - DB=mssql
+    - LICENSE_SERVER=10.171.65.22
+    - LICENSE_PORT=5789
+  restart: always
+database:
+  image: fwdocker.totvs.com.br/mssql
+  restart: always

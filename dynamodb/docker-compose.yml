@@ -1,0 +1,19 @@
+dynamodb-local:
+  image: thfservices.totvs.com.br/dynamodb-local
+  container_name: dynamodb-local
+  restart: always
+  ports:
+    - 8000:8000
+  volumes:
+    - ./sqlite_data:/dynamodb_local_db
+
+sqlite-web:
+  image: thfservices.totvs.com.br/sqlite-web
+  container_name: sqlite-web
+  restart: always
+  ports:
+    - 8080:8080
+  volumes:
+    - ./sqlite_data:/data
+  command: sqlite_web -x -p 8080 -H 0.0.0.0 /data/shared-local-instance.db
+  
