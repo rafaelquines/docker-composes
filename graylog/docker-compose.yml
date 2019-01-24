@@ -1,5 +1,6 @@
 elasticsearch:
     container_name: elasticsearch
+    restart: always
     image: docker.elastic.co/elasticsearch/elasticsearch:6.5.1
     environment:
         - http.host=0.0.0.0
@@ -7,6 +8,7 @@ elasticsearch:
 
 graylog:
     container_name: graylog
+    restart: always
     image: graylog/graylog:2.5
     ports:
         - 9000:9000

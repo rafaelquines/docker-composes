@@ -3,7 +3,6 @@ services:
   logger:
     image: chentex/random-logger:latest
     restart: always
-    container_name: logger
     logging:
       driver: "gelf"
       options:
