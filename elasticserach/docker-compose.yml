@@ -1,0 +1,15 @@
+version: '3'
+services:
+  elasticsearch:
+    image: elasticsearch:6.5.4
+    container_name: elasticsearch
+    restart: always
+    ports:
+      - 9200:9200
+      - 9300:9300
+  kibana:
+    image: kibana:6.5.4
+    container_name: kibana
+    restart: always
+    ports:
+      - 5601:5601
