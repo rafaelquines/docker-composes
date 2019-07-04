@@ -1,0 +1,75 @@
+2019-05-12 09:51:29.042 -03:00 [Information] Created User "rafaelquines"
+2019-05-12 09:51:29.158 -03:00 [Information] Created the roles
+2019-05-12 09:51:29.230 -03:00 [Information] Added the Admin role
+2019-05-12 09:55:04.481 -03:00 [Warning] Error thrown when attempting to obtain the plex libs
+System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ombi.Api.OmbiHttpClient.SendAsync(HttpRequestMessage request) in C:\projects\requestplex\src\Ombi.Api\OmbiHttpClient.cs:line 61
+   at Ombi.Api.Api.Request[T](Request request) in C:\projects\requestplex\src\Ombi.Api\Api.cs:line 38
+   at Ombi.Api.Plex.PlexApi.GetLibrarySections(String authToken, String plexFullHost) in C:\projects\requestplex\src\Ombi.Api.Plex\PlexApi.cs:line 120
+   at Ombi.Controllers.External.PlexController.GetPlexLibraries(PlexServers settings) in C:\projects\requestplex\src\Ombi\Controllers\External\PlexController.cs:line 109
+2019-05-12 09:55:10.186 -03:00 [Warning] Error thrown when attempting to obtain the plex libs
+System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ombi.Api.OmbiHttpClient.SendAsync(HttpRequestMessage request) in C:\projects\requestplex\src\Ombi.Api\OmbiHttpClient.cs:line 61
+   at Ombi.Api.Api.Request[T](Request request) in C:\projects\requestplex\src\Ombi.Api\Api.cs:line 38
+   at Ombi.Api.Plex.PlexApi.GetLibrarySections(String authToken, String plexFullHost) in C:\projects\requestplex\src\Ombi.Api.Plex\PlexApi.cs:line 120
+   at Ombi.Controllers.External.PlexController.GetPlexLibraries(PlexServers settings) in C:\projects\requestplex\src\Ombi\Controllers\External\PlexController.cs:line 109
+2019-05-12 09:55:10.659 -03:00 [Warning] Error thrown when attempting to obtain the plex libs
+System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ombi.Api.OmbiHttpClient.SendAsync(HttpRequestMessage request) in C:\projects\requestplex\src\Ombi.Api\OmbiHttpClient.cs:line 61
+   at Ombi.Api.Api.Request[T](Request request) in C:\projects\requestplex\src\Ombi.Api\Api.cs:line 38
+   at Ombi.Api.Plex.PlexApi.GetLibrarySections(String authToken, String plexFullHost) in C:\projects\requestplex\src\Ombi.Api.Plex\PlexApi.cs:line 120
+   at Ombi.Controllers.External.PlexController.GetPlexLibraries(PlexServers settings) in C:\projects\requestplex\src\Ombi\Controllers\External\PlexController.cs:line 109
+2019-05-12 09:55:10.859 -03:00 [Warning] Error thrown when attempting to obtain the plex libs
+System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ombi.Api.OmbiHttpClient.SendAsync(HttpRequestMessage request) in C:\projects\requestplex\src\Ombi.Api\OmbiHttpClient.cs:line 61
+   at Ombi.Api.Api.Request[T](Request request) in C:\projects\requestplex\src\Ombi.Api\Api.cs:line 38
+   at Ombi.Api.Plex.PlexApi.GetLibrarySections(String authToken, String plexFullHost) in C:\projects\requestplex\src\Ombi.Api.Plex\PlexApi.cs:line 120
+   at Ombi.Controllers.External.PlexController.GetPlexLibraries(PlexServers settings) in C:\projects\requestplex\src\Ombi\Controllers\External\PlexController.cs:line 109
+2019-05-12 09:55:11.056 -03:00 [Warning] Error thrown when attempting to obtain the plex libs
+System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ombi.Api.OmbiHttpClient.SendAsync(HttpRequestMessage request) in C:\projects\requestplex\src\Ombi.Api\OmbiHttpClient.cs:line 61
+   at Ombi.Api.Api.Request[T](Request request) in C:\projects\requestplex\src\Ombi.Api\Api.cs:line 38
+   at Ombi.Api.Plex.PlexApi.GetLibrarySections(String authToken, String plexFullHost) in C:\projects\requestplex\src\Ombi.Api.Plex\PlexApi.cs:line 120
+   at Ombi.Controllers.External.PlexController.GetPlexLibraries(PlexServers settings) in C:\projects\requestplex\src\Ombi\Controllers\External\PlexController.cs:line 109
+2019-05-12 09:55:21.361 -03:00 [Error] Could not test Plex
+System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ombi.Api.OmbiHttpClient.SendAsync(HttpRequestMessage request) in C:\projects\requestplex\src\Ombi.Api\OmbiHttpClient.cs:line 61
+   at Ombi.Api.Api.Request[T](Request request) in C:\projects\requestplex\src\Ombi.Api\Api.cs:line 38
+   at Ombi.Api.Plex.PlexApi.GetStatus(String authToken, String uri) in C:\projects\requestplex\src\Ombi.Api.Plex\PlexApi.cs:line 97
+   at Ombi.Controllers.External.TesterController.Plex(PlexServers settings) in C:\projects\requestplex\src\Ombi\Controllers\External\TesterController.cs:line 246
+2019-05-12 09:56:44.490 -03:00 [Warning] Error thrown when attempting to obtain the plex libs
+System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ombi.Api.OmbiHttpClient.SendAsync(HttpRequestMessage request) in C:\projects\requestplex\src\Ombi.Api\OmbiHttpClient.cs:line 61
+   at Ombi.Api.Api.Request[T](Request request) in C:\projects\requestplex\src\Ombi.Api\Api.cs:line 38
+   at Ombi.Api.Plex.PlexApi.GetLibrarySections(String authToken, String plexFullHost) in C:\projects\requestplex\src\Ombi.Api.Plex\PlexApi.cs:line 120
+   at Ombi.Controllers.External.PlexController.GetPlexLibraries(PlexServers settings) in C:\projects\requestplex\src\Ombi\Controllers\External\PlexController.cs:line 109
+2019-05-12 09:56:50.228 -03:00 [Error] Could not test Plex
+System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ombi.Api.OmbiHttpClient.SendAsync(HttpRequestMessage request) in C:\projects\requestplex\src\Ombi.Api\OmbiHttpClient.cs:line 61
+   at Ombi.Api.Api.Request[T](Request request) in C:\projects\requestplex\src\Ombi.Api\Api.cs:line 38
+   at Ombi.Api.Plex.PlexApi.GetStatus(String authToken, String uri) in C:\projects\requestplex\src\Ombi.Api.Plex\PlexApi.cs:line 97
+   at Ombi.Controllers.External.TesterController.Plex(PlexServers settings) in C:\projects\requestplex\src\Ombi\Controllers\External\TesterController.cs:line 246
+2019-05-12 09:56:50.669 -03:00 [Warning] Error thrown when attempting to obtain the plex libs
+System.OperationCanceledException: The operation was canceled.
+   at System.Net.Http.HttpClient.HandleFinishSendAsyncError(Exception e, CancellationTokenSource cts)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Ombi.Api.OmbiHttpClient.SendAsync(HttpRequestMessage request) in C:\projects\requestplex\src\Ombi.Api\OmbiHttpClient.cs:line 61
+   at Ombi.Api.Api.Request[T](Request request) in C:\projects\requestplex\src\Ombi.Api\Api.cs:line 38
+   at Ombi.Api.Plex.PlexApi.GetLibrarySections(String authToken, String plexFullHost) in C:\projects\requestplex\src\Ombi.Api.Plex\PlexApi.cs:line 120
+   at Ombi.Controllers.External.PlexController.GetPlexLibraries(PlexServers settings) in C:\projects\requestplex\src\Ombi\Controllers\External\PlexController.cs:line 109
