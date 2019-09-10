@@ -1,0 +1,11 @@
+version: '3'
+services:
+  consul:
+    image: consul
+    restart: always
+    container_name: consul
+    #volumes:
+    #    - ./config:/consul/config
+    #    - ./data:/consul/data
+    ports:
+      - 8500:8500
