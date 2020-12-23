@@ -9,4 +9,4 @@ services:
     ports:
       - 8080:80
     environment:
-      - CRONJOB_ITERATION=10
+      - CRONJOB_ITERATION=30
