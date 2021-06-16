@@ -18,3 +18,4 @@ mongo_data
 mosquitto_data
 portainer_data
 logs
+postgres/data/*
