@@ -1,5 +1,5 @@
 postgresql:
-  image: postgres
+  image: postgres:alpine
   restart: always
   environment:
     POSTGRES_PASSWORD: postgres
