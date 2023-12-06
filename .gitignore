@@ -17,5 +17,6 @@ redis_data
 mongo_data
 mosquitto_data
 portainer_data
+mssql_server_data
 logs
 postgres/data/*

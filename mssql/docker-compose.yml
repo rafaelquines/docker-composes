@@ -1,0 +1,17 @@
+version: '3'
+services:
+  mssql_server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - 'ACCEPT_EULA=Y'
+      - 'MSSQL_SA_PASSWORD=Sa12345!'
+    restart: always
+    container_name: mssql_server
+    volumes:
+      - ./mssql_server_data:/data
+    networks:
+      - net
+    ports:
+      - 1433:1433
+networks:
+  net:
