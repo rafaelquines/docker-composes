@@ -8,10 +8,12 @@ services:
     restart: always
     container_name: mssql_server
     volumes:
-      - ./mssql_server_data:/data
+      - './var_opt_mssql:/var/opt/mssql'
+      - './backups:/var/backups'
     networks:
       - net
     ports:
       - 1433:1433
+    user: root
 networks:
   net:

@@ -17,6 +17,7 @@ redis_data
 mongo_data
 mosquitto_data
 portainer_data
-mssql_server_data
+mssql/var_opt_mssql
+mssql/backups
 logs
 postgres/data/*
