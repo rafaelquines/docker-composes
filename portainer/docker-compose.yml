@@ -1,10 +1,12 @@
-portainer:
-    image: portainer/portainer
-    container_name: portainer
-    ports:
-        - 9001:9000
-    restart: always
-    volumes:
-        - /var/run/docker.sock:/var/run/docker.sock
-        - ./portainer_data:/data
+version: '3'
+services:
+    portainer:
+        image: portainer/portainer
+        container_name: portainer
+        ports:
+            - 9001:9000
+        restart: always
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - ./portainer_data:/data
 
